@@ -7,9 +7,9 @@ class Channel:
     self.name = name
   
   def addUser(self, user):
-    self.users[user.nickname] = user
+    self.users[user] = user
     user.currentChannel = self.name
 
   def removeUser(self, user):
-    del self.users[user.nickname]
+    del self.users[user]
     user.currentChannel = None

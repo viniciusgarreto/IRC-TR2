@@ -108,7 +108,5 @@ class Server:
 
 server = Server(HOST, PORT)
 server.listen()
-user1 = User(HOST, PORT, "jose costa", "ze")
 user2 = User(HOST, PORT, "alice costa", "alce")
-server.acceptConnection(user1)
 server.acceptConnection(user2)

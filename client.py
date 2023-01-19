@@ -3,7 +3,7 @@ import socket
 # Endereco IP do Servidor
 SERVER = '127.0.0.1'
 # Porta que o Servidor esta escutando
-PORT = 5005
+PORT = 5007
 tcp = socket.socket(socket.AF_INET,
 socket.SOCK_STREAM)
 dest = (SERVER, PORT)

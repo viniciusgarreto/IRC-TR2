@@ -10,10 +10,11 @@ class User:
   
   def setNickname(self, nickname, nicknameList):
     if nickname in nicknameList:
-      self.connection.send("Nickname already in use. Please choose another one")
+      print ("Nickname already in use. Please choose another one")
       return False
-
+    
     self.nickname = nickname
+    print (self.username + " changed nickname to " + self.nickname)
     return True
   
   def getUser(self):
